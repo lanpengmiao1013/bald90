@@ -1,6 +1,5 @@
 <template>
     <select v-model="value" placeholder="请选择">
-        <option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></option>
     </select>
 </template>
 
@@ -16,6 +15,6 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

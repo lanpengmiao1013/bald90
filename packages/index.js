@@ -1,8 +1,10 @@
 import lanLinkText from './lan-link-text'
 import lanSelect from './lan-select'
+import lanSlider from './lan-slider'
 const components = [
     lanLinkText,
-    lanSelect
+    lanSelect,
+    lanSlider
 ]
 
 const install = function (Vue) {
@@ -17,5 +19,6 @@ if (typeof window !== 'undefined' && window.Vue){
 export default {
     install,
     lanLinkText,
-    lanSelect
+    lanSelect,
+    lanSlider
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input[type=range] {
+            -webkit-appearance: none;/*清除系统默认样式*/
+            width:570px;
+            background: -webkit-linear-gradient(#ddd, #ddd) no-repeat, #ddd;/*设置左边颜色为#61bd12，右边颜色为#ddd*/
+            background-size: 75% 100%;/*设置左右宽度比例*/
+            height: 6px;/*横条的高度*/
+            border-radius: 30px;
+            outline: none;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;/*清除系统默认样式*/
+            height: 20px;/*拖动块高度*/
+            width: 20px;/*拖动块宽度*/
+            background: #fff;/*拖动块背景*/
+            border-radius: 50%; /*外观设置为圆形*/
+            border: 2px solid #409eff; ; /*设置边框*/
+        }
+        a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="scVlue"></div>
+    <input type="range" value="0" max="80" oninput="gb(value)" disabled="true">
+    <a href="#" disabled="" style="pointer-events:none;cursor: none">123123123</a>
+</div>
+
+<input type="range" value="0" max="10" oninput="gb(value) ">
+<script>
+
+    let inValue = document.querySelectorAll("raValue");
+    function gb(value){
+        console.log(value)
+    }
+
+</script>
+</body>
+</html>

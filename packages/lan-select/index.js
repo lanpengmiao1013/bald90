@@ -1,6 +1,6 @@
-import lanLinkText from './src/lan-select.vue'
-lanLinkText.install = function (Vue) {
-    Vue.component(lanLinkText.name,lanLinkText)
+import lanSelect from './src/lan-select.vue'
+lanSelect.install = function (Vue) {
+    Vue.component(lanSelect.name,lanSelect)
 }
 
-export default lanLinkText
+export default lanSelect
